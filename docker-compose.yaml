@@ -1,0 +1,11 @@
+version: '3.8'
+
+
+services:
+  ton-cli:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - /usr/local/share/ton-cli:/usr/src/app
+      - /usr/src/app:/usr/local/share/ton-cli
